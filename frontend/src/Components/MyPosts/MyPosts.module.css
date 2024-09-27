@@ -1,0 +1,139 @@
+.vertical{
+  margin: 200px auto ;
+}
+
+
+.board_category+hr{
+  border: 2px solid black;
+}
+.board_category {
+  margin: 0 15px;
+}
+
+.board_category button{
+  width: 200px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 200;
+  background-color: #FFFFFF;
+  border: 0;
+}
+
+
+.board_category button:hover{
+  font-size: 18px;
+  border: 0;
+  background-color: transparent;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+
+.board_posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: stretch;
+
+}
+
+.board_post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.board_post_left {
+  display: flex;
+}
+
+.board_post_left_checkbox{
+  margin-right: 20px;
+}
+.board_post_left_checkbox:hover{
+  cursor: pointer;
+}
+
+.board_post_left_content {
+  display: flex;
+  flex-direction: column;
+  /* width: 60%; */
+}
+
+.board_post_title{
+  display: flex;
+  margin: 7px 0;
+  align-items: center;
+}
+
+.board_post_title > a:hover {
+  color: red;
+}
+
+.board_post_title a{
+  color: #000000;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 25px;
+}
+.board_post_title p{
+  display: flex;
+}
+
+.board_post_bottom{
+  display: flex;
+}
+
+.board_post_bottom > div {
+  color: #8F8F8F;
+  margin-right: 10px;
+}
+
+.board_post_right {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.board_post_right {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.board_post_right button {
+  color: #FFFFFF;
+    margin: 3px;
+    border-radius: 14px;
+    border: none;
+    font-size: 12px;
+    width: 60px;
+    height: 25px;
+}
+
+.board_post_right button:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0.2rem 0.2rem 0.2rem #bbbbbb;
+  cursor: pointer;
+}
+
+
+.delete_section {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.delete_section > button {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #ff4141ac;
+  color: white;
+  border: none;
+}
+.delete_section > button:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}

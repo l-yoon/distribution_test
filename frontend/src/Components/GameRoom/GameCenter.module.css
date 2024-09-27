@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    height: 70%;
+}
+
+.waitForCreate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.waitForCreate > h3{
+    font-size: 25px;
+}

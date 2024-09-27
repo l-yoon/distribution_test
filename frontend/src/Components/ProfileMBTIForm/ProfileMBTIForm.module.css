@@ -1,0 +1,141 @@
+.container {
+    width: 35rem;
+    margin: 2rem 0;
+}
+
+.title {
+    color: #444444;
+}
+
+.noContentWarning {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 6.8rem
+}
+
+.warningText {
+    color: #6B6B6B;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.warningTextDetail {
+    color: #969696;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.introduce, .mbtiRatio, .followRanking, .followerRanking {
+    margin: 0.5rem 0;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 1rem 1rem;
+    height: auto;
+    min-height: 7rem;
+    width: 100%;
+    position: relative;
+}
+
+.introduce {
+
+}
+
+.emptyIntroduce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptyIntroduce > p {
+    font-size: 1rem;
+    color: #969696;
+    font-weight: 500;
+}
+
+.mbtiRatio {
+    height: 300px;
+}
+
+.followerRanking, .followRanking {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 240px;
+}
+
+.rankingContainer {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    color: white;
+}
+
+.rankingMbtiText {
+    text-align: center;
+    color: #5c5c5c;
+}
+
+.voteMbtiRatioContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.voteMbtiButtonList {
+       display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.voteMbtiButtonList > button {
+    width: 40px;
+    height: 30px;
+    margin: 16px;
+    background-color: transparent;
+    border: none;
+}
+
+.voteMbtiButtonList > button:hover {
+    cursor: pointer;
+}
+
+.voteMbtiButtonList > button > img{
+    width: 40px;
+    height: 30px;
+}
+
+.first, .second, .third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 0; /* Start with height 0 */
+    animation: growHeight 0.8s ease forwards;
+}
+
+.first {
+    max-height: 120px;
+    background-color: rgb(236, 218, 116);
+}
+
+.second {
+    max-height: 70px;
+    background-color: rgb(212, 212, 212);
+}
+
+.third {
+    max-height: 40px;
+    background-color: #e08830;
+}
+
+@keyframes growHeight {
+    from {
+        height: 0;
+    }
+    to {
+        height: var(--target-height);
+    }
+}
